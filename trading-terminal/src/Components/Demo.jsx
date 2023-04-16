@@ -15,7 +15,6 @@ useEffect(() => {
   return (
     <div>Demo
         <h1 className="title">Get</h1>
-        {console.log("lorem")}
     </div>
   )
 }
