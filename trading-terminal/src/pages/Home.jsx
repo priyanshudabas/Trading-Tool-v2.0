@@ -9,9 +9,9 @@ const Home = () => {
     //     });
     // </script>
 
-    <div class="container">
-      <div class="content">
-        <div class="text">
+    <div className="container">
+      <div className="content">
+        <div className="text">
           <h1>
             helps traders win regardlessss of market conditions <br></br>{" "}
           </h1>
@@ -21,8 +21,8 @@ const Home = () => {
             major exchange.
           </p>
         </div>
-        <div class="container111">
-          <img src={myImage} />
+        <div className="container111">
+          <img src={myImage} alt="investing"/>
         </div>
       </div>
     </div>

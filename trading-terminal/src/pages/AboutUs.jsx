@@ -9,20 +9,20 @@ import goyal from "../assets/goyal.png"
 const AboutUs = () => {
   return (
     <div>
-      <div class="container">
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
+      <div className="container">
+        <div className="row">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image is-48x48">
                       <img src={shivam} />
                     </figure>
                   </div>
-                  <div class="media-content">
-                    <p class="title is-4">Shivam Jain</p>
-                    <p class="subtitle is-6">
+                  <div className="media-content">
+                    <p className="title is-4">Shivam Jain</p>
+                    <p className="subtitle is-6">
                       {" "}
                       <a
                         href="https://www.linkedin.com/in/shivam-jain-6004a822a/"
@@ -33,7 +33,7 @@ const AboutUs = () => {
                     </p>
                   </div>
                 </div>
-                <div class="content">
+                <div className="content">
                   Student At Amity University
                   <br></br>
                   Intern at @globallogic
@@ -43,18 +43,18 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div class="column">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image is-48x48">
                       <img src={krishna} />
                     </figure>
                   </div>
-                  <div class="media-content">
-                    <p class="title is-4">Krishna Aggarwal</p>
-                    <p class="subtitle is-6">
+                  <div className="media-content">
+                    <p className="title is-4">Krishna Aggarwal</p>
+                    <p className="subtitle is-6">
                       <a href="" target="_blank">
                         @krishna
                       </a>
@@ -62,7 +62,7 @@ const AboutUs = () => {
                   </div>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   Student At Amity University
                   <br></br>
                   Open for Work
@@ -72,18 +72,18 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div class="column">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image is-48x48">
                       <img src={goyal} />
                     </figure>
                   </div>
-                  <div class="media-content">
-                    <p class="title is-4">Shubham Goyal</p>
-                    <p class="subtitle is-6">
+                  <div className="media-content">
+                    <p className="title is-4">Shubham Goyal</p>
+                    <p className="subtitle is-6">
                       <a href="" target="_blank">
                         @shubham
                       </a>
@@ -91,7 +91,7 @@ const AboutUs = () => {
                   </div>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   Student At Amity University
                   <br></br>
                   Upcoming SDE @hexaview
@@ -101,18 +101,18 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div class="column">
-            <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-48x48">
+          <div className="column">
+            <div className="card">
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-left">
+                    <figure className="image is-48x48">
                       <img src={priyanshu} />
                     </figure>
                   </div>
-                  <div class="media-content">
-                    <p class="title is-4">Priyanhu Dabas</p>
-                    <p class="subtitle is-6">
+                  <div className="media-content">
+                    <p className="title is-4">Priyanhu Dabas</p>
+                    <p className="subtitle is-6">
                       <a href="" target="_blank">
                         @priyanshu
                       </a>
@@ -120,7 +120,7 @@ const AboutUs = () => {
                   </div>
                 </div>
 
-                <div class="content">
+                <div className="content">
                   Student At Amity University
                   <br></br>
                   Intern at @globallogic

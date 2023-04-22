@@ -3,29 +3,29 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <section class="section">
-        <div class="container">
-          <div class="columns">
-            <article class="column" style={{ height: "680px" }}>
-              <h2 class="title">Contact Info</h2>
-              <h4 class="title is-4">Address</h4>
-              <address class="block">
+      <section className="section">
+        <div className="container">
+          <div className="columns">
+            <article className="column" style={{ height: "680px" }}>
+              <h2 className="title">Contact Info</h2>
+              <h4 className="title is-4">Address</h4>
+              <address className="block">
                 Dummy address 4826 Tea Berry Lane Bowler, Wisconsin - 54416
               </address>
-              <h4 class="title is-4">Contact</h4>
+              <h4 className="title is-4">Contact</h4>
               <p>1234567890</p>
               <p>abc@email.com</p>
             </article>
-            <article class="column" style={{ height: "680px" }}>
-              <h2 class="title">How can we help?</h2>
-              <h3 class="subtitle">Message Us</h3>
-              <div class="field">
-                <label class="label is-medium">
+            <article className="column" style={{ height: "680px" }}>
+              <h2 className="title">How can we help?</h2>
+              <h3 className="subtitle">Message Us</h3>
+              <div className="field">
+                <label className="label is-medium">
                   First Name<span>*</span>
                 </label>
-                <div class="control">
+                <div className="control">
                   <input
-                    class="input is-medium"
+                    className="input is-medium"
                     type="text"
                     placeholder="Alex"
                     required
@@ -33,13 +33,13 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div class="field">
-                <label class="label is-medium">
+              <div className="field">
+                <label className="label is-medium">
                   Last Name<span>*</span>
                 </label>
-                <div class="control">
+                <div className="control">
                   <input
-                    class="input is-medium"
+                    className="input is-medium"
                     type="text"
                     placeholder="Smith"
                     required
@@ -47,33 +47,33 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div class="field">
-                <label class="label is-medium">
+              <div className="field">
+                <label className="label is-medium">
                   Email<span>*</span>
                 </label>
-                <div class="control has-icons-left has-icons-right">
+                <div className="control has-icons-left has-icons-right">
                   <input
-                    class="input is-medium"
+                    className="input is-medium"
                     type="email"
                     placeholder="example@gmail.com"
                     required
                   />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
+                  <span className="icon is-small is-left">
+                    <i className="fas fa-envelope"></i>
                   </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
+                  <span className="icon is-small is-right">
+                    <i className="fas fa-exclamation-triangle"></i>
                   </span>
                 </div>
               </div>
 
-              <div class="field">
-                <label class="label is-medium">
+              <div className="field">
+                <label className="label is-medium">
                   Message<span>*</span>
                 </label>
-                <div class="control">
+                <div className="control">
                   <textarea
-                    class="textarea is-medium"
+                    className="textarea is-medium"
                     placeholder="Your message..."
                     required
                     style={{ resize: "none", overflow: "auto" }}
@@ -81,9 +81,9 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div class="field">
-                <div class="control">
-                  <button class="button is-primary is-outlined is-medium">
+              <div className="field">
+                <div className="control">
+                  <button className="button is-primary is-outlined is-medium">
                     Submit
                   </button>
                 </div>

@@ -5,9 +5,9 @@ import logo from "../assets/logo.png"
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <Link class="navbar-item">
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+          <Link className="navbar-item">
             <img
               src={logo}
               width="50"
@@ -20,7 +20,7 @@ const Navbar = () => {
 
           <a
             role="button"
-            class="navbar-burger"
+            className="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
@@ -31,8 +31,8 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
+        <div id="navbarBasicExample" className="navbar-menu">
+          <div className="navbar-start">
             <Link to="/" className="navbar-item">Home</Link>
             <Link to="/features" className="navbar-item">Features</Link>
             <Link to="/aboutus" className="navbar-item">About Us</Link>
@@ -40,9 +40,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <div className="buttons">
               <Link to="/login" className="button is-primary"><strong>Log In</strong></Link>
             </div>
           </div>
