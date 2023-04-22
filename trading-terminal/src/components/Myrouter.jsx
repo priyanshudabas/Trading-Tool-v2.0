@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
 import Login from '../pages/Login';
+import TradeForm from '../pages/tradeform';
 
 const Myrouter = () => {
   return (
@@ -17,6 +18,7 @@ const Myrouter = () => {
             <Route path='/features' element={<Features />} />
             <Route path='/aboutus' element={<AboutUs />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/tradeform' element={<TradeForm />} />
             <Route path='/login' element={<Login />} />
         </Routes>
     </BrowserRouter>
