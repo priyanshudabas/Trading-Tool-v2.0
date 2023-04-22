@@ -305,11 +305,13 @@ nav ul li a {
   transform: translate(-50%, -130%);
 }
 .navbar {
-  padding-left: 40;
-  padding-top: 10;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 18px;
 }
 .navbar-start {
-  margin-left: 750;
+  margin-left: 350px;
+  font-size: 17px;
 }
 .buttons {
   padding-right: 20;
