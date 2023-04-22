@@ -6,6 +6,7 @@ import Navbar from './Navbar'
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
 import Login from '../pages/Login';
+import Connection from '../pages/Connection';
 
 const Myrouter = () => {
   return (
@@ -18,6 +19,7 @@ const Myrouter = () => {
             <Route path='/aboutus' element={<AboutUs />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/connection' element={<Connection />} />
         </Routes>
     </BrowserRouter>
 </div>
