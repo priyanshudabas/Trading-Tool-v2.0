@@ -6,7 +6,7 @@ const Login = () => {
       <div className="container p-6">
         <div className="row">
           <div className="cl-md-4 offset-md-4">
-            <div className="card p-6" style={{ height: "80vh" }}>
+            <div className="card p-6" style={{ height: "60vh" }}>
               <div className="card-body">
                 <h2
                   className="text-center"
