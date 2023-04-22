@@ -9,7 +9,8 @@ const Features = () => {
       <div className="container m-6">
         <h1 className="title is-1">Platform Features </h1>
       </div>
-      <div className="container"> </div>
+     <div className="card mx-6 p-6" style={{height:"70vh", width:"95%"}}>
+     <div className="container"> </div>
       <div className="columns">
         <div className="column is-1"></div>
         <div className="column">
@@ -52,6 +53,8 @@ const Features = () => {
         </div>
         <div className="column is -1"></div>
       </div>
+
+     </div>
     </div>
   );
 };
