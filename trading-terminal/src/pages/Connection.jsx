@@ -1,8 +1,53 @@
-import React from 'react'
+import React from "react";
+import { useEffect } from "react";
+import axios from "axios";
+import crypto from "crypto"
+import querystring from "querystring"
+
 const Connection = () => {
+  useEffect(() => {
+    const apiKey = "Rg+Hl5MHOrVMORtuVP44RSJmAvX0SAES92fOThdsyDakvca+ZK2CnnzB";
+    const apiSecret =
+      "M5PGFc1yf1RIHDBvvfWZWGm608bmedcmC6J0Qffmx9F7PHrp18sU7Bx1AQpbJc9xf5wShY/Wh1AfQlWhLmjpEg==";
+
+    const nonce = new Date().getTime() * 1000;
+
+    const requestData = {
+      pair: "BTC/USD",
+      type: "buy",
+      ordertype: "limit",
+      price: "5000",
+      volume: "0.01",
+      nonce: nonce,
+    };
+
+    const message = querystring.stringify(requestData);
+
+    const signature = crypto
+      .createHmac("sha256", Buffer.from(apiSecret, "base64"))
+      .update("https://api.kraken.com/0/private/AddOrder" + message)
+      .digest("base64");
+
+    axios({
+      method: "post",
+      url: "https://api.kraken.com/0/private/AddOrder",
+      headers: {
+        "API-Key": apiKey,
+        "API-Sign": signature,
+      },
+      data: message,
+    })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <div>
-        <div className="container p-6">
+      <div className="container p-6">
         <div className="row">
           <div className="cl-md-4 offset-md-4">
             <div className="card p-6" style={{ height: "55vh" }}>
@@ -14,7 +59,7 @@ const Connection = () => {
                   Connect an Exchange
                 </h2>
                 <br></br>
-                <form action="login" method="post">
+                <form>
                   <div className="form-group">
                     <label
                       for="exampleInputEmail1"
@@ -25,12 +70,10 @@ const Connection = () => {
                     <input
                       type="text"
                       className="form-control"
-                      
                       aria-describedby="emailHelp"
                       placeholder="Enter Api Key"
                       required="required"
                     />
-                   
                   </div>
 
                   <div className="form-group">
@@ -50,7 +93,7 @@ const Connection = () => {
                   </div>
 
                   <div className="text-center mt-2">
-                    <button type="submit" className="button is-primary">
+                    <button type="button" className="button is-primary">
                       Connect Kraken
                     </button>
                   </div>
@@ -61,7 +104,7 @@ const Connection = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Connection
+export default Connection;
