@@ -11,6 +11,8 @@ const AboutUs = () => {
     <div>
       <div className="container">
         <div className="row">
+          <br></br>
+        <h2 className="title" >About Us</h2>
           <div className="column">
             <div className="card">
               <div className="card-content">
@@ -21,7 +23,7 @@ const AboutUs = () => {
                     </figure>
                   </div>
                   <div className="media-content">
-                    <p className="title is-4">Shivam Jain</p>
+                    <p className="title is-4">Shivam Jain  </p>
                     <p className="subtitle is-6">
                       {" "}
                       <a
@@ -34,10 +36,12 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <div className="content">
+                <br></br>
                   Student At Amity University
                   <br></br>
                   Intern at @globallogic
                   <br></br>
+                  
                 </div>
               </div>
             </div>
