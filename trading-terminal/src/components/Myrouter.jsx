@@ -6,11 +6,8 @@ import Navbar from './Navbar'
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
 import Login from '../pages/Login';
-<<<<<<< HEAD
-import TradeForm from '../pages/tradeform';
-=======
 import Connection from '../pages/Connection';
->>>>>>> f533ce533f967d589009b6d2bf813addcfccbc8e
+import TradeForm from '../pages/tradeform';
 
 const Myrouter = () => {
   return (

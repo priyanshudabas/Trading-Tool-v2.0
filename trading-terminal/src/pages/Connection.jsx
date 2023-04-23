@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import crypto from "crypto"
+// import crypto from "crypto"
 import querystring from "querystring"
 
 const Connection = () => {
@@ -23,17 +23,17 @@ const Connection = () => {
 
     const message = querystring.stringify(requestData);
 
-    const signature = crypto
-      .createHmac("sha256", Buffer.from(apiSecret, "base64"))
-      .update("https://api.kraken.com/0/private/AddOrder" + message)
-      .digest("base64");
+    // const signature = crypto
+    //   .createHmac("sha256", Buffer.from(apiSecret, "base64"))
+    //   .update("https://api.kraken.com/0/private/AddOrder" + message)
+    //   .digest("base64");
 
     axios({
       method: "post",
       url: "https://api.kraken.com/0/private/AddOrder",
       headers: {
         "API-Key": apiKey,
-        "API-Sign": signature,
+        // "API-Sign": signature,
       },
       data: message,
     })
