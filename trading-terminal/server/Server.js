@@ -7,7 +7,7 @@
 //   target: 'https://api.binance.com',
 //   changeOrigin: true,
 //   headers: {
-//     'X-MBX-APIKEY': 'p0oxtsCLfG2ciwvT7HyHaGfEwGtjTrRVUYjsPJnyIBDWQqy4wYBcnlHMlR754NWw'
+//     'X-MBX-APIKEY': ''
 //   }
 // }));
 
