@@ -101,8 +101,8 @@ const TradeForm = () => {
           <TradingView></TradingView>
         </div>
 
-        <div className="card3">
-          <table class="table">
+        <div className="card3 p-5 mr-6">
+          <table class="table table1">
             <thead>
               <tr>
                 <th>Header 1</th>
