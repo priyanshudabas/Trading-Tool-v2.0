@@ -4,7 +4,9 @@ const Login = () => {
   return (
     <div>
       <div className="container center-container mt-6">
+        
         <div className="card card1 p-6">
+        <h2 className="title">Login</h2>
           <div class="field">
             <p class="control has-icons-left has-icons-right">
               <label class="label">Email</label>

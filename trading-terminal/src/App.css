@@ -541,14 +541,14 @@ nav ul li a {
 }
 
 
-span {
+.span111 {
   padding : 30px;
   font-size : 1.2em;
   cursor : pointer;
   display: block;
 }
 
-span::after {
+.span111::after {
   float: right;
   right: 10%;
   content: "+";

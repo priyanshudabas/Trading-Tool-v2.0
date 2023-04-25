@@ -137,7 +137,7 @@ const AboutUs = () => {
         </div>
         <br></br>
         <h2 className="title" >Frequently Asked Questions</h2>
-        <label for="touch1"><span>What is a Trading Tool?</span></label>               
+        <label for="touch1"><span className="span111">What is a Trading Tool?</span></label>               
   <input type="checkbox" id="touch1"/> 
 
   <ul class="slide1">
@@ -147,7 +147,7 @@ const AboutUs = () => {
   </ul>
 
 
-  <label for="touch2"><span>What is Futures?</span></label>               
+  <label for="touch2"><span className="span111" >What is Futures?</span></label>               
   <input type="checkbox" id="touch2"/> 
 
   <ul class="slide2">
