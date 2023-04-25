@@ -13,8 +13,11 @@ const Home = () => {
       <div className="content">
         <div className="text">
           <h1>
-            helps traders win regardlessss of market conditions <br></br>{" "}
+            helps traders win regardless of market conditions <br></br>{" "}
           </h1>
+          <div class="buttons">
+              <button class="button is-primary is-medium">Get Started</button>
+          </div>
           <p>
             Trading Tool helps users grow their crypto investments using a
             feature-rich terminal and proven automated bot that operates on a

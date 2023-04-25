@@ -14,7 +14,7 @@ const Navbar = () => {
               style={{ maxHeight: "100px", marginRight:"12px" }}
             />
             <h2>
-              <b> Trading Tool </b>
+              <b> TRADING TOOL </b>
             </h2>
           </Link>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <Link to="/login" className="button is-primary"><strong>Log In</strong></Link>
+              <Link to="/login" className="button is-primary" ><strong>Log In/Register</strong></Link>
             </div>
           </div>
         </div>
