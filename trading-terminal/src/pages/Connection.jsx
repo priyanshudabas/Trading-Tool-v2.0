@@ -6,9 +6,9 @@ import querystring from "querystring"
 
 const Connection = () => {
   useEffect(() => {
-    const apiKey = "Rg+Hl5MHOrVMORtuVP44RSJmAvX0SAES92fOThdsyDakvca+ZK2CnnzB";
+    const apiKey = "";
     const apiSecret =
-      "M5PGFc1yf1RIHDBvvfWZWGm608bmedcmC6J0Qffmx9F7PHrp18sU7Bx1AQpbJc9xf5wShY/Wh1AfQlWhLmjpEg==";
+      "";
 
     const nonce = new Date().getTime() * 1000;
 

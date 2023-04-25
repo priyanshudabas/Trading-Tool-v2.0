@@ -8,6 +8,7 @@ import Contact from '../pages/Contact';
 import Login from '../pages/Login';
 import Connection from '../pages/Connection';
 import TradeForm from '../pages/tradeform';
+import Testing from '../pages/Testing';
 
 const Myrouter = () => {
   return (
@@ -22,6 +23,7 @@ const Myrouter = () => {
             <Route path='/tradeform' element={<TradeForm />} />
             <Route path='/login' element={<Login />} />
             <Route path='/connection' element={<Connection />} />
+            <Route path='/testing' element={<Testing />} />
         </Routes>
     </BrowserRouter>
 </div>
