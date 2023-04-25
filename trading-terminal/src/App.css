@@ -519,3 +519,9 @@ nav ul li a {
 .ABC {
   width: 20%;
 }
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
