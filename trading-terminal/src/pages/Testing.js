@@ -37,8 +37,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import crypto from 'crypto-browserify'
-
+import crypto from 'crypto-browserify';
 
 function AccountDetails() {
   const [accountDetails, setAccountDetails] = useState({});
@@ -54,17 +53,18 @@ function AccountDetails() {
     const queryString = `timestamp=${timestamp}`;
     const signature = createSignature(queryString, secretKey);
 
-    axios.get(`${baseUrl}${endpoint}?${queryString}&signature=${signature}`, {
-      headers: {
-        'X-MBX-APIKEY': apiKey
-      }
-    })
-    .then(response => {
-      setAccountDetails(response.data);
-    })
-    .catch(error => {
-      setError(error);
-    });
+    axios
+      .get(`${baseUrl}${endpoint}?${queryString}&signature=${signature}`, {
+        headers: {
+          'X-MBX-APIKEY': apiKey,
+        },
+      })
+      .then((response) => {
+        setAccountDetails(response.data);
+      })
+      .catch((error) => {
+        setError(error);
+      });
   }, []);
 
   function createSignature(queryString, secretKey) {
