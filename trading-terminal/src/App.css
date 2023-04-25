@@ -510,6 +510,14 @@ nav ul li a {
   width: 20%;
   display: inline-block;
 }
+
+.card3 {
+  width: 100%;
+}
+
+.table1 {
+  width: 100%;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
